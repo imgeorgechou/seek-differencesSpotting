@@ -67,8 +67,8 @@
         text-align: center;
         font-weight: bold;
         width: 100%;
-        max-width: 300px;
-        margin-top: 40px;
+        max-width: 350px;
+        margin-top: 20px;
       }
 
       .control-item {
@@ -79,7 +79,8 @@
         padding: 0.5rem 1rem;
         border-radius: 5px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
       }
 
       label {
@@ -114,7 +115,7 @@
         display: block;
         width: 100%;
         height: auto;
-        object-fit: contain;
+        object-fit: cover;
       }
 
       .overlay-image {
@@ -187,6 +188,11 @@
           <p>找出圖片與現實的不同之處</p>
           <p>並依對應的英文字母編號</p>
           <p>回到遊戲由左至右輸入！</p>
+          <p>註：取消勾選下方選項即可隱藏英文字母！</p>
+        </div>
+        <div class="control-item">
+          <input type="checkbox" id="overlay-toggle" name="overlay-toggle" />
+          <label for="overlay-toggle">顯示英文字母編號</label>
         </div>
       </div>
 
@@ -208,10 +214,6 @@
       <div class="zoom-container">
         <span class="zoom-control" id="zoom-out">縮小</span>
         <span class="zoom-control" id="zoom-in">放大</span>
-      </div>
-      <div class="control-item">
-        <input type="checkbox" id="overlay-toggle" name="overlay-toggle" />
-        <label for="overlay-toggle">顯示英文字母編號</label>
       </div>
     </div>
 
